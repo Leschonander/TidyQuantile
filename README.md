@@ -7,22 +7,11 @@ Every wanted a way to make quantiles that worked well with the tidyverse workflo
 
 Example:
 ```R
-tidy_tally_st(station_data.SF, dc_census_shapefiles, OBJECTID)
+station_data.SF %>%
+  tidy_quantile(num_bikes_available, 5) 
 ```
 Output:
 ```
-# A tibble: 130 x 2
-   OBJECTID     n
-      <dbl> <int>
- 1        1     2
- 2        2     1
- 3        3     1
- 4        4     3
- 5        5     3
- 6        6     3
- 7        7     2
- 8       10     1
- 9       11     6
-10       12     1
-# ... with 120 more rows
+ 0%  25%  50%  75% 100% 
+ 0    4    7   11   42 
 ```
