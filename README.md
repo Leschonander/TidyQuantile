@@ -15,3 +15,9 @@ Output:
  0%  25%  50%  75% 100% 
  0    4    7   11   42 
 ```
+
+To install:
+
+```r
+devtools::install_github("yourusername/tidyquantile")
+```
