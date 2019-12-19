@@ -19,5 +19,5 @@ Output:
 To install:
 
 ```r
-devtools::install_github("yourusername/tidyquantile")
+devtools::install_github("Leschonander/TidyQuantile")
 ```
